@@ -17,9 +17,9 @@ class Article {
     this.domElement.classList.toggle('article-open');
 
     if (this.domElement.classList.contains('article-open')) {
-      this.expandButton.textContent = 'expand';
+      this.expandButton.textContent = 'Shrink';
     } else {
-      this.expandButton.textContent = 'shrink';
+      this.expandButton.textContent = 'Expand';
     }
   }
 }
@@ -34,6 +34,4 @@ class Article {
 
 let articles = Array.from(document.querySelectorAll('.article'));
 
-articles.forEach(articles => {
-  const articleInsance = new Article(articles)
-})
+articles.forEach(articles => { const articleInsance = new Article(articles)})
